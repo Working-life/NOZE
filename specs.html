@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="input.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script> -->
+
+
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <!-- navbar -->
+<div class="hidden lg:block sticky top-0 z-10">
+  <nav class=" bg-white text-black flex justify-between pt-1 pb-1 z-10">
+    <div class="flex pl-9">
+      <a href="index.html">      <img src="https://getnoze.com/wp-content/themes/noze/noze/assets/img/logo.svg" class="h-11 pt-3 px-3 w-32" alt="">
+      </a>
+      <ul class="px-4 py-4 flex space-x-8 text-[#654A9B] header__nav-list">
+          <li class="cursor-pointer text-base font-poppins"><a href="index.html" class="">Overview</a></li>
+          <li class="cursor-pointer  text-base font-poppins"><a href="specs.html">Specs</a></li>
+          <li class="cursor-pointer  text-base font-poppins"><a href="index.html">FAQs</a></li>
+      </ul>
+    </div>
+  
+    <div class="flex items-center justify-end space-x-11">
+     <div>
+      <p class="text-[#654A9B] text-lg font-poppins">
+        Order for $249
+      </p>
+     </div>
+     <div class="pr-16">
+      <!-- font-family: Raleway, sans-serif;
+        #654A9B
+        #B9B0E4
+   -->
+      <button class=" cursor-pointer pb-3 pt-3 bg-[#654A9B] text-white pl-8 pr-8 rounded-md text-base font-railway font-medium">
+        Pre Order
+      </button>
+     </div>
+    </div>
+   
+  </nav>
+</div>
+<hr>
+
+<!-- navbar end -->
+
+<!-- small screen navbar -->
+
+<div class="lg:hidden sticky top-0 z-10">
+  <nav class=" bg-white text-black flex justify-between pt-1 pb-1 ">
+    <div class="flex pl-9">
+      <img src="https://getnoze.com/wp-content/themes/noze/noze/assets/img/logo.svg" class="h-11 pt-3 px-3 w-32" alt="">
+     
+    </div>
+  
+    <div class="flex items-center justify-end space-x-11 pr-2">
+      <div class='dropdown '>
+        <div class='title pointerCursor text-[#654A9B]'> <a href="index.html">Overview<i class="fa fa-angle-down"></i></a> </div>
+        
+        <div class='menu pointerCursor hide'>
+          <div class='option' id='option1'><a href="specs.html"> Specs</a>
+           </div>
+          <div class='option' id='option2'> <a href="index.html">FAQs</a> </div>
+         
+        </div>
+    
+      </div>
+    </div>
+   
+  </nav>
+
+</div>
+ 
+
+<!-- small screen navbar end -->
+
+<!-- bottom nav -->
+
+
+  <nav class="lg:hidden w-full fixed bottom-0 bg-white text-black flex justify-between z-10 ">
+    <div class="flex pl-9">
+      <div>
+        <p class="text-[#654A9B] text-lg font-poppins">
+          Order for $249
+        </p>
+       </div>
+    </div>
+  
+    <div class="flex items-center justify-end space-x-11">
+      <div class="pr-16">
+        <!-- font-family: Raleway, sans-serif;
+          #654A9B
+          #B9B0E4
+     -->
+        <button class=" cursor-pointer pb-3 pt-3 bg-[#654A9B] text-white pl-8 pr-8 rounded-md font-poppins text-base">
+          Pre order
+        </button>
+       </div>in
+    </div>
+   
+  </nav>
+
+
+<!-- bottom nav end -->
+
+  <!-- img -->
+  <div class="bg-black pt-10 pb-10">
+    <img class="m-auto" src="https://getnoze.com/wp-content/uploads/2021/07/Outline-768x561.png" alt="">
+  </div>
+
+  <!-- img end -->
+
+
+<main>
+  <div class="grid grid-cols-5 gap-4 mt-5 mb-20">
+    <div class="col-span-5 sm:col-span-5 md:col-span-2 lg:col-span-2 xl:col-span-2...">
+      <h2 class="text-[48px] text-[rgb(33,5,69)] font-medium font-poppins mt-20 text-center
+      ">
+       Specifications
+      </h2>
+    </div>
+
+    <div class="col-span-5 sm:col-span-5 md:col-span-3 lg:col-span-3 xl:col-span-3...">
+<!-- faq section -->
+<div class=" ">
+  <!-- <div id="anchor__faqs"></div> -->
+  <div class="section__faqs">
+  <div class="faqsSec__main-wrapper">
+  <div class="faqsSec__inner-wrapper">
+  <div class="faqsSec__item-wrapper">
+  <h3 class="faqsSec__item-title">How is NOZE different from other air quality monitors?</h3>
+  <div class="faqsSec__item-content">
+  <p>The technology behind NOZE is based on a digital nose sensor (also known as an e-nose). With this sensor, NOZE can precisely detect a wide range of pollutants and chemicals. In contrast, almost all other air quality monitors on the market today use a bundle of off-the-shelf sensors that are limited in what they can detect and can vary widely in quality, accuracy and reliability.  
+  </p>
+  </div>
+  </div>
+  <div class="faqsSec__item-wrapper">
+  <h3 class="faqsSec__item-title">What is a digital nose?
+  </h3>
+  <div class="faqsSec__item-content">
+  <p>A digital nose is a breakthrough technology that digitizes the sense of smell. It’s similar to how the camera digitized the sense of sight and the microphone digitized the sense of hearing. </p>
+  </div>
+  </div>
+  <div class="faqsSec__item-wrapper">
+  <h3 class="faqsSec__item-title">What is the Virus Risk Index?
+  </h3>
+  <div class="faqsSec__item-content">
+  <p>The Virus Risk Index is an AI-powered tool built into NOZE to help make indoor spaces safer places to live, work, and visit by monitoring the risk of virus transmission (tracking how conducive the air is to spreading the virus) and the risk of virus presence (tracking the likelihood that the virus is in the air).
+  
+  <br><br> Note: The Virus Risk Index is not intended to be an alternative to precautionary measures or laboratory testing.
+  </p>
+  </div>
+  </div>
+  <div class="faqsSec__item-wrapper">
+  <h3 class="faqsSec__item-title">How does the Virus Risk Index work?
+  </h3>
+  <div class="faqsSec__item-content">
+  <p>The Virus Risk Index is a 10 point scale where values between 1 and 8 indicate an increasing risk of virus transmission, while values of 9 and 10 indicate a likelihood that the virus pathogen is present. To calculate this score, our AI analyzes five things: Airborne Volatiles related to the Coronavirus and Influenza, Particulate Matter, Temperature, Humidity and Carbon Dioxide.
+  </p>
+  </div>
+  </div>
+  <div class="faqsSec__item-wrapper">
+  <h3 class="faqsSec__item-title">What space can it cover?
+  </h3>
+  <div class="faqsSec__item-content">
+  <p>The molecules in every gas and odour have different properties which impact how far they can travel and how fast they can be detected. A good rule of thumb for a typical indoor space is that NOZE can cover an area of up to 800 square feet (80 square meters) without barriers like walls or doors.
+  </p>
+  </div>
+  </div>
+  <div class="faqsSec__item-wrapper">
+  <h3 class="faqsSec__item-title">How many NOZE devices do I need?
+  </h3>
+  <div class="faqsSec__item-content">
+  <p>If you want to monitor different rooms at the same time, we suggest that you place one NOZE in each room, depending on the layout. If you only have one NOZE then you should monitor the room where you spend most of your time or are the most concerned about. 
+  </p>
+  </div>
+  </div>
+  <div class="faqsSec__item-wrapper">
+  <h3 class="faqsSec__item-title">What is the Warranty on NOZE?
+  </h3>
+  <div class="faqsSec__item-content">
+  <p>NOZE comes with a one-year limited warranty.</p>
+  </div>
+  </div>
+  
+  </div>
+  </div>
+  </div>
+</div>
+
+<!-- faq section end -->
+    </div>
+</div>
+
+</main>
+
+
+  <!-- footer -->
+  <footer>
+
+    <div class="grid grid-cols-6 gap-4 pt-10 pb-10 mb-10 bg-[#F6F5FA]">
+      <div class="text-center col-span-6 sm:col-span-6 md:col-span-2 lg:col-span-2 xl:col-span-2... lg:order1 md:order-1 order-2">    <div class=" flex md:ml-8 lg:ml-8 justify-center  ">
+        <a href="https://www.facebook.com/GetNoze"  class="ml-5">
+          <img src="https://getnoze.com/wp-content/themes/noze/noze/assets/img/fb.svg" alt="">
+        </a>
+        <a href="" class="ml-8">
+          <img src="https://getnoze.com/wp-content/themes/noze/noze/assets/img/twitter.svg" alt="">
+        </a>
+        <a href="" class="ml-8"><img src="https://getnoze.com/wp-content/themes/noze/noze/assets/img/ig.svg" alt=""></a>
+           </div></div>
+      <div class="text-center col-span-6 sm:col-span-6 md:col-span-2 lg:col-span-2 xl:col-span-2... lg:order2 md:order-2 order-3">  <span class="text-[#210545] font-poppins text-sm text-center">2021 NOZE</span></div>
+      <div class="col-span-6 sm:col-span-6 md:col-span-2 lg:col-span-2 xl:col-span-2...lg:order3 md:order-3 order-1"><ul class="flex text-center justify-center">
+        <a href="" class="mr-8 font-poppins text-sm"><li>Privacy Policy</li></a>
+        <a href="" class="mr-8 font-poppins text-sm"><li>Term of Use</li></a>
+        <a href="" class="mr-8 font-poppins text-sm"><li>Contact</li></a>
+      </ul></div>
+  
+     
+    </div>
+  
+    
+  
+  
+   
+   
+  
+  </footer>
+
+
+  
+<!-- faqs -->
+<script>
+  var item = $('.faqsSec__item-wrapper');
+
+item.click(function() {
+$(this).siblings().removeClass('active');
+$(this).toggleClass('active');
+});
+</script>
+
+<!-- faqs end -->
+</body>
+</html>

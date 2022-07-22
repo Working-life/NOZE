@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="input.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <title>NOZE | The Smart Air Quality Monitor</title>
+</head>
+<body>
+  
+<!-- navbar -->
+<div class="hidden lg:block sticky top-0 z-10">
+  <nav class=" bg-white text-black flex justify-between pt-1 pb-1 z-10">
+    <div class="flex pl-9">
+      <a href="#overview">      <img src="https://getnoze.com/wp-content/themes/noze/noze/assets/img/logo.svg" class="h-11 pt-3 px-3 w-32" alt="">
+      </a>
+      <ul class="px-4 py-4 flex space-x-8 text-[#654A9B] header__nav-list">
+          <li class="cursor-pointer text-base font-poppins"><a href="#overview" class="">Overview</a></li>
+          <li class="cursor-pointer  text-base font-poppins"><a href="/specs.html">Specs</a></li>
+          <li class="cursor-pointer  text-base font-poppins"><a href="#faqs">FAQs</a></li>
+      </ul>
+    </div>
+  
+    <div class="flex items-center justify-end space-x-11">
+     <div>
+      <p class="text-[#654A9B] text-lg font-poppins">
+        Order for $249
+      </p>
+     </div>
+     <div class="pr-16">
+      <!-- font-family: Raleway, sans-serif;
+        #654A9B
+        #B9B0E4
+   -->
+      <button class=" cursor-pointer pb-3 pt-3 bg-[#654A9B] text-white pl-8 pr-8 rounded-md text-base font-railway font-medium">
+        Pre Order
+      </button>
+     </div>
+    </div>
+   
+  </nav>
+</div>
+<hr>
+
+<!-- navbar end -->
+
+<!-- small screen navbar -->
+
+<div class="lg:hidden sticky top-0 z-10">
+  <nav class=" bg-white text-black flex justify-between pt-1 pb-1 ">
+    <div class="flex pl-9">
+      <a href="/index.html">      <img src="https://getnoze.com/wp-content/themes/noze/noze/assets/img/logo.svg" class="h-11 pt-3 px-3 w-32" alt="">
+      </a>
+     
+    </div>
+  
+    <div class="flex items-center justify-end space-x-11 pr-2">
+      <div class='dropdown '>
+        <div class='title pointerCursor text-[#654A9B]'> <a href="#overview">Overview<i class="fa fa-angle-down"></i></a> </div>
+        
+        <div class='menu pointerCursor hide'>
+          <div class='option' id='option1'><a href="specs.html"> Specs</a>
+           </div>
+          <div class='option' id='option2'> <a href="#faqs">FAQs</a> </div>
+         
+        </div>
+    
+      </div>
+    </div>
+   
+  </nav>
+
+</div>
+ 
+
+<!-- small screen navbar end -->
+
+<!-- bottom nav -->
+
+
+  <nav class="lg:hidden w-full fixed bottom-0 bg-white text-black flex justify-between z-10 ">
+    <div class="flex pl-9">
+      <div>
+        <p class="text-[#654A9B] text-lg font-poppins">
+          Order for $249
+        </p>
+       </div>
+    </div>
+  
+    <div class="flex items-center justify-end space-x-11">
+      <div class="pr-16">
+        <!-- font-family: Raleway, sans-serif;
+          #654A9B
+          #B9B0E4
+     -->
+        <button class=" cursor-pointer pb-3 pt-3 bg-[#654A9B] text-white pl-8 pr-8 rounded-md font-poppins text-base">
+          Pre order
+        </button>
+       </div>
+    </div>
+   
+  </nav>
+
+
+<!-- bottom nav end -->
+<!-- header -->
+
+<header id="overview">
+  <div class="grid grid-cols-6 gap-4">
+    <div class="col-span-6 sm:col-span-6 md:col-span-3 lg:col-span-3 "> <div class="lg:ml-20 mb:ml-20 mb:text-start lg:text-start text-center mt-32">
+      <h2 class="text-[48px] text-[rgb(33,5,69)] font-medium font-poppins 
+      ">
+        There's something
+        <br class="">
+        new in the air
+      </h2>
+      
+      <p class="text-[#6b5a78] text-xl font-normal mt-10 mb:mr-32  lg:mr-32 mb:text-start lg:text-start text-center">
+        NOZE is an AI powered air quality monitor that works to keep you safe. Breathe easy.
+      </p>
+     
+
+      <div class="modal-new">
+      <!-- modal new -->
+      <button class="mb:block lg:block hidden cursor-pointer modal-open pb-3 pt-3 bg-[#654A9B] text-white pl-4 pr-4 rounded-md text-base font-railway font-medium mt-10">Join the waitlist</button>
+  
+      <!--Modal-->
+      <div class="modal z-10 opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+        <div class="modal-overlay absolute w-full h-full bg-[#000000CC] opacity-100"></div>
+        
+        <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+          
+          
+    
+            <!--Title-->
+              <div class="modal-close float-right mr-5 mt-5 cursor-pointer z-50">
+                
+                  <i class="fa-solid fa-xmark fill-current text-black"></i>
+                
+            </div>
+            <div class="modal-content mt-8 py-4 text-center px-6">
+
+            <p class="text-4xl font-bold  text-[rgb(33,5,69)]  font-poppins mt-5 mb-5">Be the first to know</p>
+
+            <!--Body-->
+            <p class="text-[#6b5a78] text-lg font-normal ml-6 mr-10">Leave us your details and we'll keep you up to date about NOZE.</p>
+
+<div class="lg:w-72  lg:ml-12 ">
+  <form class="bg-white md:px-8  pt-6 pb-8 mb-4">
+    <div class="mb-4">
+     
+      <input class="shadow appearance-none border border-[#D0CBE6] rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="First Name">
+    </div>
+
+    <div class="mb-4 ">
+     
+      <input class="shadow appearance-none border border-[#D0CBE6]  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
+    </div>
+<div class="mb-8">
+  <select class="shadow appearance-none border border-[#D0CBE6]  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+
+    <option class="text-[#654A9B]">Select Country 
+    </option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+  </select>
+     <!-- <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"> -->
+     
+      <!-- <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"> -->
+        <!-- <i class="fa-solid fa-caret-down fill-current h-4 w-4"></i> -->
+
+      <!-- </div> -->
+</div>
+   
+   
+    <div class=" ">
+      <button class=" cursor-pointer bg-[#654A9B] text-white font-bold py-2 px-16 rounded focus:outline-none focus:shadow-outline " type="button">
+        Sign me up!
+      </button>
+     
+    </div>
+  </form>
+</div>
+             
+              
+    
+         
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- modal new end -->
+      </div>
+
+      
+    </div></div>
+    <div class="col-span-6 sm:col-span-6 md:col-span-3 lg:col-span-3 "><div class="justify-end  mt-10 ">
+      <div class="">
+      
+            <img src="https://getnoze.com/wp-content/uploads/2021/08/NOZE-Hero-1.png" data-aos="fade-up"
+            alt="">
+        
+                  </div>
+     
+    </div></div>
+   
+  </div>
+</header>
+
+<!-- header end -->
+
+
+<main>
+  <!-- grid -->
+  <div class="grid grid-cols-5 gap-4 bg-[#F3F2F8] pb-10 pt-10">
+    <div class="col-span-5  sm:col-span-5 md:col-span-2 lg:col-span-2 xl:col-span-2..."><div class="lg:ml-20 lg:text-start  text-center ">
+      <h2 class="text-[48px] text-[rgb(33,5,69)] font-medium font-poppins 
+      ">
+        NOZE is making
+        <br class="">
+        headlines
+      </h2>
+    </div></div>
+    <div class="col-span-5  sm:col-span-5 md:col-span-3 lg:col-span-3 xl:col-span-3..."></div>
+   
+  </div>
+ 
+  <!-- grid end -->
+
+
+  
+<!-- gallery -->
+<div class=" hidden lg:block  mt-20 mb-40">
+  <style>
+                    .imgSection{position:relative}
+                    .imgSection .imgContainer{display:-webkit-box;display:-ms-flexbox;display:flex;margin-right:auto;margin-left:auto;position:relative}
+                    
+                </style>
+
+
+<section class="imgSection  " >
+<div class="imgContainer ">
+<div class=" _anim-items _active">
+<div class="">
+    <div class="">
+<div class="">
+<!-- start Heading 1 -->
+
+<h2  class= "text-[48px] text-[rgb(33,5,69)] font-medium font-poppins ml-20">Anything but <br> ordinary</h2>
+<!-- end Heading 1 -->		</div>
+</div>
+<div class="">
+<div class="">
+<!-- start Sub Heading -->
+
+<p class="text-[#6b5a78] text-xl font-normal mt-10 ml-20">Some would say it's out of this world. That’s not far off.</p>
+<!-- end Sub Heading -->		</div>
+</div>
+<div class="">
+<div class="">
+<!-- start about animation - copy -->
+
+<div class="about-gallery__content-wrapper _anim-items _active ml-20">
+<button class="about-gallery__slide active" id="about-gallery__slide-1">
+<span>NASA INSPIRED</span>
+<p>NOZE is powered by a single sensor built on years of NASA innovation. Our technology raises the bar to new heights <a><img class="about-gallery__info-icon" src="https://getnoze.com/wp-content/themes/twentytwentyone/noze/assets/img/info.svg" alt=""></a> by using the digital sense of smell to keep track of the air you’re breathing.</p>
+</button>
+<button class="about-gallery__slide" id="about-gallery__slide-2">
+<span>ENGINEERED TO THINK</span>
+<p>NOZE uses artificial intelligence to decode the air around you in real-time, all the time. It actively samples the air every second and breaks things down into specifics so that you can act while it matters.</p>
+</button>
+</div>
+<div class="about-gallery__slide-popup" style="display: none;">
+<p>To the exosphere if you want us to get specific because our technology was sent to the international space station.<br></p>
+<span>Check it out </span>
+<a href="https://enose.jpl.nasa.gov/index.html" target="_blank">here</a>
+</div>
+<div class="about-gallery__switchers-wrapper">
+<a href="#about-gallery__slide-1" id="about-gallery__switcher-1" class="about-gallery__switcher active">
+<!--<img src="https://i.gifer.com/ZKZx.gif">-->
+</a>
+<a href="#about-gallery__slide-2" id="about-gallery__switcher-2" class="about-gallery__switcher">
+<!--<img src="https://i.gifer.com/ZKZx.gif">-->
+</a>
+</div>
+<!-- end about animation - copy -->		</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3301064 nasa-section-right" data-id="3301064" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+    <div class="elementor-element elementor-element-d8b8f6a elementor-widget elementor-widget-ucaddon_about_animation" data-id="d8b8f6a" data-element_type="widget" data-widget_type="ucaddon_about_animation.default">
+<div class="elementor-widget-container">
+<!-- start about animation -->
+
+<div class="about-gallery__img-wrapper">
+<div class="about-gallery__img-item">
+<video src="https://getnoze.com/wp-content/themes/twentytwentyone/noze/assets/movies/m_about1.mp4" type="video/mp4" autoplay="" muted="" loop="" playsinline=""></video>
+<!-- <img src="http://getnoze.com/noze/wp-content/themes/twentytwentyone/noze/assets/img/about1.gif" alt=""> -->
+</div>
+<div class="about-gallery__img-item">
+<!-- <video src="http://getnoze.com/noze/wp-content/themes/twentytwentyone/noze/assets/movies/m_about2.mp4" type="video/mp4" autoplay muted loop playsinline></video> -->
+<img src="https://getnoze.com/wp-content/themes/twentytwentyone/noze/assets/img/about2.gif" alt="">
+</div>
+</div>
+<!-- end about animation -->		</div>
+</div>
+<div class="">
+<div class="">
+<!-- <span class=""><a href="https://www.stratuscent.com/" target="_blank">Engineered by <u>Stratuscent inc.</u></a></span>	 -->
+	</div>
+</div>
+</div>
+</div>
+  </div>
+</section>
+
+
+</div>
+<!-- gallery end -->
+
+  <!-- grid 1 -->
+  <div class="grid grid-cols-6 gap-4">
+    <div class="col-span-6  sm:col-span-6 md:col-span-3 lg:col-span-3 xl:col-span-2... lg:order1 md:order-1 order-2 ">
+      <video  src="https://getnoze.com/wp-content/themes/twentytwentyone/noze/assets/movies/NOZEabout1.mp4" autoplay  muted loop></video>
+    </div>
+      <div class="col-span-6  sm:col-span-6 md:col-span-3 lg:col-span-3 xl:col-span-3... lg:order-2 md:order-2 order-1">
+        <div data-aos="fade-up">
+          <h2  class= "text-[48px] text-[rgb(33,5,69)] font-medium font-poppins lg:text-start  text-center ">Conquer the Virus</h2>
+
+      <p class="text-[#6b5a78] text-xl font-normal mt-10 lg:text-start md:text-start  text-center ">Noze tracks the airborne markers (VOCs) associated with the Coronavirus family. Our AI uses that information to deliver a real-time risk index that will not only tell you if your space is prone to spreading the virus, but whether there’s a chance the virus is actually in the air.</p>
+        </div>
+
+     
+
+    </div>
+   
+  </div>
+  <!-- grid 1 end -->
+
+
+
+
+  <!-- grid 2 -->
+
+  <div class="grid grid-cols-6 gap-4">
+    <div class="col-span-6  sm:col-span-6 md:col-span-3 lg:col-span-3 xl:col-span-2...">
+      <div data-aos="fade-up" class="lg:ml-20 md:ml-20 z-0">
+        <h2  class= "text-[48px] text-[rgb(33,5,69)] font-medium font-poppins lg:text-start md:text-start  text-center">Break the Mold</h2>
+
+    <p class="text-[#6b5a78] text-xl font-normal mt-10 lg:text-start md:text-start  text-center">NOZE monitors the air for spores and other markers associated with the most common types of indoor mold. Our mold index will tell you if it's likely that there’s mold around and whether your space is in danger of being a breeding ground.</p>
+      </div>
+    </div>
+    <div class="col-span-6  sm:col-span-6 md:col-span-3 lg:col-span-3 xl:col-span-3...">
+      <video class="" src="https://getnoze.com/wp-content/themes/twentytwentyone/noze/assets/movies/NOZEabout2.mp4" autoplay muted loop ></video>
+    </div>
+   
+  </div>
+  <!-- grid 2 end -->
+
+  <!-- grid 3 -->
+    <!-- start crushers-section -->
+    <div class="grid grid-cols-6 gap-4 mb-20">
+      <div class="col-span-6  sm:col-span-6 md:col-span-6 lg:col-span-8 xl:col-span-9...">
+        <div data-aos="fade-up">
+          <h2  class= " text-center text-[48px] text-[rgb(33,5,69)] font-medium font-poppins">What you can't see matters.
+          </h2>
+
+      <p class="text-[#6b5a78] text-center text-xl font-normal mt-10">NOZE also monitors a range of other pollutants to help make indoor <br> spaces safer places to live, work, and visit..</p>
+      
+
+        </div>
+      </div>
+      
+     
+    </div>
+     
+    <div class="section__crushers">
+      <div class="crushers__main-wrapper">
+      <div class="crushers__inner-wrapper">
+      <ul class="crushers__nav-wrapper">
+        <li class="active" onclick="crushersLinks(0)">Carbon Dioxide</li>
+        <li onclick="crushersLinks(1)">Ammonia</li>
+        <li onclick="crushersLinks(2)">Formaldehyde</li>
+        
+        <li onclick="crushersLinks(3)">Nitrogen Dioxide</li>
+        <li onclick="crushersLinks(4)">Butanal</li>
+        <li onclick="crushersLinks(5)">Particulate crusher</li>
+        <li onclick="crushersLinks(6)">Ethanol</li>
+        <li onclick="crushersLinks(7)">Tobacco Odour</li>
+        <li onclick="crushersLinks(8)">Humidity</li>
+      </ul>
+      <div class="crushers__img-wrapper">
+        <div id="crusher_item1" class="crushers__img-item-wrapper">
+           <h3>Clouds our thinking, lowers productivity & affects our sleep.</h3>
+           <p>Exhaled breath from people & pets and open flames are the most common sources.</p>
+        </div>
+        <div id="crusher_item2" class="crushers__img-item-wrapper">
+           <h3>Irritates our noses and throats, amplifies allergies & triggers asthma.</h3>
+           <p>Cleaning products are the most common sources.</p>
+        </div>
+       
+        <div id="crusher_item3" class="crushers__img-item-wrapper">
+           <h3>Irritates the eyes, nose, throat & skin - and is often linked to cancer.</h3>
+           <p>Pressed wood products like easy-to-assemble furniture are the most common sources.</p>
+        </div>
+        <div id="crusher_item4" class="crushers__img-item-wrapper">
+           <h3>Causes permanent damage to our respiratory system.</h3>
+           <p>Wood fireplaces & fuel powered appliances are the most common sources.</p>
+        </div>
+        <div id="crusher_item5" class="crushers__img-item-wrapper">
+           <h3>Irritates our lungs causing coughing and shortness of breath.</h3>
+           <p>Garbage, scented candles & cigarette smoke are the most common sources.</p>
+        </div>
+        <div id="crusher_item6" class="crushers__img-item-wrapper">
+           <h3>Irritates our lungs, aggravates allergies & can increase virus spread.</h3>
+           <p>Cooking, cleaning & particles coming from the outdoors are the most common sources.</p>
+        </div>
+        <div id="crusher_item7" class="crushers__img-item-wrapper">
+           <h3>Causes headaches, nausea & irritates our lungs.</h3>
+           <p>Cleaning detergents & hand sanitizers are the most common sources.</p>
+        </div>
+        <div id="crusher_item8" class="crushers__img-item-wrapper">
+           <h3>Seeps into furniture and can linger in a space for a long time.</h3>
+           <p>If smoking is not allowed in your space, keep an eye behind closed doors.</p>
+        </div>
+        <div id="crusher_item9" class="crushers__img-item-wrapper">
+           <h3>Causes mold growth that triggers asthma & irritates our ears, nose and throat.</h3>
+           <p>If humidity is too low, viruses can more easily survive and be transmitted.</p>
+        </div>
+      </div>
+      <div class="crushers__switchers-wrapper">
+        <span>Carbon Dioxide</span>
+        <a href="#" id="crushers__switcher-1" class="crushers__switcher active"></a>
+        <a href="#" id="crushers__switcher-2" class="crushers__switcher"></a>
+        
+        <a href="#" id="crushers__switcher-3" class="crushers__switcher"></a>
+        <a href="#" id="crushers__switcher-4" class="crushers__switcher"></a>
+        <a href="#" id="crushers__switcher-5" class="crushers__switcher"></a>
+        <a href="#" id="crushers__switcher-6" class="crushers__switcher"></a>
+        <a href="#" id="crushers__switcher-7" class="crushers__switcher"></a>
+        <a href="#" id="crushers__switcher-8" class="crushers__switcher"></a>
+        <a href="#" id="crushers__switcher-9" class="crushers__switcher"></a>
+      </div>
+      </div>
+      </div>
+      </div>
+      <!-- end crushers-section -->	
+  <!-- grid 3 end -->
+
+  <!-- section -->
+  <div class="z-0" data-aos="fade-up">
+    <h2  class= "text-[48px] text-[rgb(33,5,69)] text-center font-medium font-poppins ">What's more important, form
+      <br>
+      or function?</h2>
+      <p class="text-[#6b5a78] text-xl font-normal mt-10 text-center">We didn’t think it was fair to have to choose.
+</p>
+
+  </div>
+  <div>
+    <video class="" src="https://getnoze.com/wp-content/uploads/2021/08/WALP.mp4" autoplay loop muted  ></video>
+  </div>
+  <!-- secttion end -->
+
+ <!-- section 2 -->
+ <div class="grid grid-cols-5 gap-3 mt-32">
+  <div class="col-span-5  sm:col-span-5 md:col-span-2 lg:col-span-2 xl:col-span-2...">
+    <div  class="ml-20 z-0 sticky top-52">
+      <h2  class= " hidden md:block lg:block text-[48px] text-[rgb(33,5,69)] font-medium font-poppins ">Incredible <br> power, right <br> under your <br> NOZE</h2>
+
+      <h2  class= " lg:hidden md:hidden text-[40px] text-[rgb(33,5,69)] font-medium font-poppins text-center">Incredible power, <br> right  under your <br> NOZE</h2>
+
+
+ 
+    </div>
+  </div>
+  <div class="col-span-5  sm:col-span-5 md:col-span-3 lg:col-span-3 xl:col-span-3...">
+    <div class="img1 w-[370px] h-[390px] lg:mb-20 mb-32 lg:ml-0 mb:ml-0 ml-12">
+      <div class="" data-aos="fade-up">
+        <div class="mb-24">
+          <div class="bg-[#d0cbe6]  w-[370px] h-[390px]  rounded-full">
+            <img class=" p-[26px] w-[100%] h-[100%] " src="https://getnoze.com/wp-content/uploads/2021/07/6.png" alt="">
+          </div>
+         
+          <h1 class="text-lg text-center text-[rgb(33,5,69)] font-bold font-poppins">Check in.
+          </h1>
+          <p class="text-center text-[#6b5a78]">Keep an eye on things in real- <br> time so you can have peace of <br> mind all the time.
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="img2 w-[370px] h-[390px] lg:ml-80 lg:mb-20 mb-32 lg:ml-0 mb:ml-0 ml-12">
+      <div class="" data-aos="fade-up">
+        <div class="mb-24">
+          <div class="bg-[#d0cbe6]  w-[370px] h-[390px]  rounded-full">
+            <img class=" p-[26px] w-[100%] h-[100%] " src="https://getnoze.com/wp-content/uploads/2021/07/8.png" alt="">
+          </div>
+          <h1 class="text-lg text-center text-[rgb(33,5,69)] font-bold font-poppins">Track it.
+          </h1>
+         
+          <p class="text-center text-[#6b5a78]">Dive into the details to <br> understand exactly what’s going <br> on so you can take action in the <br> moment.</p>
+        </div>
+      </div>
+    </div>
+    <div class="img3 w-[370px] h-[390px] lg:mb-20 mb-32 lg:ml-0 mb:ml-0 ml-12">
+      <div class="" data-aos="fade-up">
+        <div>
+          <div class="bg-[#d0cbe6]  w-[370px] h-[390px]  rounded-full">
+            <img class=" p-[26px] w-[100%] h-[100%] " src="https://getnoze.com/wp-content/uploads/2021/07/9.png" alt="">
+          </div>
+          <h1 class="text-lg text-center text-[rgb(33,5,69)] font-bold font-poppins">Share it.
+          </h1>
+         
+          <p class="text-center text-[#6b5a78]">Let others see what’s in the air <br> before they come inside by <br>
+             sharing access to your Noze.</p>
+         
+          <p class="text-center text-[#6b5a78]">Are you a business?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+<!-- section 2 end -->
+
+
+  <!-- section 1 -->
+  <div class="grid grid-cols-6 gap-4 mt-36">
+    <div class="col-span-6  sm:col-span-6 md:col-span-3 lg:col-span-3 xl:col-span-2...  lg:order1 md:order-1 order-2">
+    <img class=" w-96  h-96 rounded-full m-auto	  " src="https://getnoze.com/wp-content/uploads/2021/07/06-1-copy-1536x1126.png" alt="">
+    </div>
+      <div class="col-span-6  sm:col-span-6 md:col-span-3 lg:col-span-3 xl:col-span-3...  lg:order2 md:order-2 order-1">
+        <div data-aos="fade-up">
+          <h2  class= "text-[48px] text-[rgb(33,5,69)] font-medium font-poppins lg:text-start md:text-start  text-center">Wondering if <br> you should get <br> a NOZE?</h2>
+
+      <p class="text-[#6b5a78] text-xl font-normal mt-10 lg:text-start md:text-start  text-center">Any way you slice it, it’s a no brainer.</p>
+      <p class="text-[#6b5a78] text-xl font-normal mt-10 lg:text-start md:text-start  text-center">1. Reduce Virus spread <br>
+        2. Watch out for Mold <br>
+        3. Keep Asthma in check <br>
+        4. Avoid Allergy flare ups <br>
+        5. Improve your Sleep <br>
+        6. Boost Productivity & Focus</p>
+
+        </div>
+
+  
+
+    </div>
+   
+  </div>
+    <!-- section 1 end-->
+
+ 
+<!-- faq section -->
+<div class="mt-20 mb-10 lg:ml-20 lg:mr-20" id="faqs">
+  <div class="">
+  <div class="">
+    <div class="" data-aos="fade-up">
+    
+      <h1 class="text-[48px] text-center text-[rgb(33,5,69)] font-medium font-poppins">FAQs
+      </h1>
+  
+  </div>
+  <div class="faqsSec__inner-wrapper">
+  <div class="faqsSec__item-wrapper">
+  <h3 class="faqsSec__item-title">How is NOZE different from other air quality monitors?</h3>
+  <div class="faqsSec__item-content">
+  <p>The technology behind NOZE is based on a digital nose sensor (also known as an e-nose). With this sensor, NOZE can precisely detect a wide range of pollutants and chemicals. In contrast, almost all other air quality monitors on the market today use a bundle of off-the-shelf sensors that are limited in what they can detect and can vary widely in quality, accuracy and reliability.  
+  </p>
+  </div>
+  </div>
+  <div class="faqsSec__item-wrapper">
+  <h3 class="faqsSec__item-title">What is a digital nose?
+  </h3>
+  <div class="faqsSec__item-content">
+  <p>A digital nose is a breakthrough technology that digitizes the sense of smell. It’s similar to how the camera digitized the sense of sight and the microphone digitized the sense of hearing. </p>
+  </div>
+  </div>
+  <div class="faqsSec__item-wrapper">
+  <h3 class="faqsSec__item-title">What is the Virus Risk Index?
+  </h3>
+  <div class="faqsSec__item-content">
+  <p>The Virus Risk Index is an AI-powered tool built into NOZE to help make indoor spaces safer places to live, work, and visit by monitoring the risk of virus transmission (tracking how conducive the air is to spreading the virus) and the risk of virus presence (tracking the likelihood that the virus is in the air).
+  
+  <br><br> Note: The Virus Risk Index is not intended to be an alternative to precautionary measures or laboratory testing.
+  </p>
+  </div>
+  </div>
+  <div class="faqsSec__item-wrapper">
+  <h3 class="faqsSec__item-title">How does the Virus Risk Index work?
+  </h3>
+  <div class="faqsSec__item-content">
+  <p>The Virus Risk Index is a 10 point scale where values between 1 and 8 indicate an increasing risk of virus transmission, while values of 9 and 10 indicate a likelihood that the virus pathogen is present. To calculate this score, our AI analyzes five things: Airborne Volatiles related to the Coronavirus and Influenza, Particulate Matter, Temperature, Humidity and Carbon Dioxide.
+  </p>
+  </div>
+  </div>
+  <div class="faqsSec__item-wrapper">
+  <h3 class="faqsSec__item-title">What space can it cover?
+  </h3>
+  <div class="faqsSec__item-content">
+  <p>The molecules in every gas and odour have different properties which impact how far they can travel and how fast they can be detected. A good rule of thumb for a typical indoor space is that NOZE can cover an area of up to 800 square feet (80 square meters) without barriers like walls or doors.
+  </p>
+  </div>
+  </div>
+  <div class="faqsSec__item-wrapper">
+  <h3 class="faqsSec__item-title">How many NOZE devices do I need?
+  </h3>
+  <div class="faqsSec__item-content">
+  <p>If you want to monitor different rooms at the same time, we suggest that you place one NOZE in each room, depending on the layout. If you only have one NOZE then you should monitor the room where you spend most of your time or are the most concerned about. 
+  </p>
+  </div>
+  </div>
+  <div class="faqsSec__item-wrapper">
+  <h3 class="faqsSec__item-title">What is the Warranty on NOZE?
+  </h3>
+  <div class="faqsSec__item-content">
+  <p>NOZE comes with a one-year limited warranty.</p>
+  </div>
+  </div>
+  
+  </div>
+  </div>
+  </div>
+</div>
+
+<!-- faq section end -->
+    <!-- section 3 -->
+    <div class="z-0 mt-40 mb-40">
+      <div  data-aos="fade-up">
+        <h2  class= "text-[48px] text-[rgb(33,5,69)] text-center font-medium font-poppins">Stay connected with NOZE
+        </h2>
+          <p class="text-[#6b5a78] text-xl font-normal text-center">NOZE is an AI powered air quality monitor that <br>
+            works to keep you safe. Breathe easy.</p>
+      </div>
+      <div class="modal-new text-center">
+        <!-- modal new -->
+        <button class=" cursor-pointer modal-open pb-3 pt-3 bg-[#654A9B] text-white pl-4 pr-4 rounded-md text-base font-railway font-medium mt-10">Join the waitlist</button>
+    
+        <!--Modal-->
+        <div class="modal z-10 opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+          <div class="modal-overlay absolute w-full h-full bg-[#000000CC] opacity-100"></div>
+          
+          <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+            
+            
+      
+              <!--Title-->
+                <div class="modal-close float-right mr-5 mt-5 cursor-pointer z-50">
+                  
+                    <i class="fa-solid fa-xmark fill-current text-black"></i>
+                  
+              </div>
+              <div class="modal-content mt-8 py-4 text-center px-6">
+  
+              <p class="text-4xl font-bold  text-[rgb(33,5,69)]  font-poppins mt-5 mb-5">Be the first to know</p>
+  
+              <!--Body-->
+              <p class="text-[#6b5a78] text-lg font-normal ml-6 mr-10">Leave us your details and we'll keep you up to date about NOZE.</p>
+  
+  <div class="lg:w-72  lg:ml-12 ">
+    <form class="bg-white md:px-8  pt-6 pb-8 mb-4">
+      <div class="mb-4">
+       
+        <input class="shadow appearance-none border border-[#D0CBE6] rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="First Name">
+      </div>
+  
+      <div class="mb-4 ">
+       
+        <input class="shadow appearance-none border border-[#D0CBE6]  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
+      </div>
+  <div class="mb-8">
+    <select class="shadow appearance-none border border-[#D0CBE6]  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+  
+      <option class="text-[#654A9B]">Select Country 
+      </option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </select>
+      
+  </div>
+     
+     
+      <div class=" ">
+        <button class=" cursor-pointer bg-[#654A9B] text-white font-bold py-2 px-16 rounded focus:outline-none focus:shadow-outline " type="button">
+          Sign me up!
+        </button>
+       
+      </div>
+    </form>
+  </div>
+               
+                
+      
+           
+              
+            </div>
+          </div>
+        </div>
+  
+        <!-- modal new end -->
+        </div>
+    </div>
+   
+  <!-- section 3 end -->
+
+ 
+
+
+
+</main>
+
+
+
+
+<!-- exm modal -->
+
+
+
+
+<!-- exm modal end -->
+
+
+<footer>
+
+  <div class="grid grid-cols-6 gap-4 pt-10 pb-10 mb-10 bg-[#F6F5FA]">
+    <div class="text-center col-span-6 sm:col-span-6 md:col-span-2 lg:col-span-2 xl:col-span-2... lg:order1 md:order-1 order-2">    <div class=" flex md:ml-14 lg:ml-14 lg:justify-start md:justify:start justify-center  ">
+      <a href="https://www.facebook.com/GetNoze"  class="ml-5">
+        <img src="https://getnoze.com/wp-content/themes/noze/noze/assets/img/fb.svg" alt="">
+      </a>
+      <a href="" class="ml-8">
+        <img src="https://getnoze.com/wp-content/themes/noze/noze/assets/img/twitter.svg" alt="">
+      </a>
+      <a href="" class="ml-8"><img src="https://getnoze.com/wp-content/themes/noze/noze/assets/img/ig.svg" alt=""></a>
+         </div></div>
+    <div class="text-center col-span-6 sm:col-span-6 md:col-span-2 lg:col-span-2 xl:col-span-2... lg:order2 md:order-2 order-3">  <span class="text-[#210545] font-poppins text-sm text-center">2021 NOZE</span></div>
+    <div class="col-span-6 sm:col-span-6 md:col-span-2 lg:col-span-2 xl:col-span-2...lg:order3 md:order-3 order-1"><ul class="flex text-center justify-center">
+      <a href="" class="mr-8 font-poppins text-sm"><li>Privacy Policy</li></a>
+      <a href="" class="mr-8 font-poppins text-sm"><li>Term of Use</li></a>
+      <a href="" class="mr-8 font-poppins text-sm"><li>Contact</li></a>
+    </ul></div>
+
+   
+  </div>
+
+  
+
+
+ 
+ 
+
+</footer>
+
+
+
+
+
+
+<!-- modal new script -->
+<script>
+  var openmodal = document.querySelectorAll('.modal-open')
+  for (var i = 0; i < openmodal.length; i++) {
+    openmodal[i].addEventListener('click', function(event){
+    event.preventDefault()
+    toggleModal()
+    })
+  }
+  
+  const overlay = document.querySelector('.modal-overlay')
+  overlay.addEventListener('click', toggleModal)
+  
+  var closemodal = document.querySelectorAll('.modal-close')
+  for (var i = 0; i < closemodal.length; i++) {
+    closemodal[i].addEventListener('click', toggleModal)
+  }
+  
+
+  function toggleModal () {
+    const body = document.querySelector('body')
+    const modal = document.querySelector('.modal')
+    modal.classList.toggle('opacity-0')
+    modal.classList.toggle('pointer-events-none')
+    body.classList.toggle('modal-active')
+  }
+  
+   
+</script>
+<!-- modal new script end -->
+
+
+
+<!-- select dropdown -->
+<script>
+        
+  function toggleClass(elem,className){
+    if (elem.className.indexOf(className) !== -1){
+      elem.className = elem.className.replace(className,'');
+    }
+    else{
+      elem.className = elem.className.replace(/\s+/g,' ') + 	' ' + className;
+    }
+  
+    return elem;
+  }
+  
+  function toggleDisplay(elem){
+    const curDisplayStyle = elem.style.display;			
+  
+    if (curDisplayStyle === 'none' || curDisplayStyle === ''){
+      elem.style.display = 'block';
+    }
+    else{
+      elem.style.display = 'none';
+    }
+  
+  }
+  
+  function toggleMenuDisplay(e){
+    const dropdown = e.currentTarget.parentNode;
+    const menu = dropdown.querySelector('.menu');
+    const icon = dropdown.querySelector('.fa-angle-down');
+  
+    toggleClass(menu,'hide');
+    toggleClass(icon,'rotate-90');
+  }
+  
+  function handleOptionSelected(e){
+    toggleClass(e.target.parentNode, 'hide');			
+  
+    const id = e.target.id;
+    const newValue = e.target.textContent + ' ';
+    const titleElem = document.querySelector('.dropdown .title');
+    const icon = document.querySelector('.dropdown .title .fa');
+  
+  
+    titleElem.textContent = newValue;
+    titleElem.appendChild(icon);
+  
+    //trigger custom event
+    document.querySelector('.dropdown .title').dispatchEvent(new Event('change'));
+      //setTimeout is used so transition is properly shown
+    setTimeout(() => toggleClass(icon,'rotate-90',0));
+  }
+  
+  function handleTitleChange(e){
+    const result = document.getElementById('result');
+  
+    result.innerHTML = 'The result is: ' + e.target.textContent;
+  }
+  
+  //get elements
+  const dropdownTitle = document.querySelector('.dropdown .title');
+  const dropdownOptions = document.querySelectorAll('.dropdown .option');
+  
+  //bind listeners to these elements
+  dropdownTitle.addEventListener('click', toggleMenuDisplay);
+  
+  dropdownOptions.forEach(option => option.addEventListener('click',handleOptionSelected));
+  
+  document.querySelector('.dropdown .title').addEventListener('change',handleTitleChange);
+      </script>
+<!-- select dropdown end -->
+
+<!-- crusher js -->
+<script>
+  var marttWrapperTop = $(".section__crushers").offset().top;
+var imgWrapper = $(".crushers__img-wrapper");
+var wrapperOffsetHeight =
+  $(".section__crushers").outerHeight() -
+  $(".crushers__main-wrapper").outerHeight();
+var imgItem = $(".crushers__img-item-wrapper").outerHeight();
+var oneScroll = imgItem;
+
+if ($(window).width() >= 992) {
+  $(window).scroll(function () {
+    $(".crushers__nav-wrapper li.active").removeAttr("class");
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= marttWrapperTop) {
+      $(imgWrapper).animate({ scrollTop: scroll - marttWrapperTop }, 0);
+    }
+
+    if (scroll <= marttWrapperTop + oneScroll) {
+      $(imgWrapper).scrollTop(0);
+      $(".crushers__nav-wrapper li:nth-child(1)").addClass("active");
+    } else if (
+      scroll >= marttWrapperTop &&
+      scroll <= marttWrapperTop + oneScroll * 2
+    ) {
+      $(imgWrapper).scrollTop(imgItem);
+      $(".crushers__nav-wrapper li:nth-child(2)").addClass("active");
+    } else if (
+      scroll >= marttWrapperTop + oneScroll &&
+      scroll <= marttWrapperTop + oneScroll * 3
+    ) {
+      $(imgWrapper).scrollTop(imgItem * 2);
+      $(".crushers__nav-wrapper li:nth-child(3)").addClass("active");
+    } else if (
+      scroll >= marttWrapperTop + oneScroll * 2 &&
+      scroll <= marttWrapperTop + oneScroll * 4
+    ) {
+      $(imgWrapper).scrollTop(imgItem * 3);
+      $(".crushers__nav-wrapper li:nth-child(4)").addClass("active");
+    } else if (
+      scroll >= marttWrapperTop + oneScroll * 3 &&
+      scroll <= marttWrapperTop + oneScroll * 5
+    ) {
+      $(imgWrapper).scrollTop(imgItem * 4);
+      $(".crushers__nav-wrapper li:nth-child(5)").addClass("active");
+    } else if (
+      scroll >= marttWrapperTop + oneScroll * 4 &&
+      scroll <= marttWrapperTop + oneScroll * 6
+    ) {
+      $(imgWrapper).scrollTop(imgItem * 5);
+      $(".crushers__nav-wrapper li:nth-child(6)").addClass("active");
+    } else if (
+      scroll >= marttWrapperTop + oneScroll * 5 &&
+      scroll <= marttWrapperTop + oneScroll * 7
+    ) {
+      $(imgWrapper).scrollTop(imgItem * 6);
+      $(".crushers__nav-wrapper li:nth-child(7)").addClass("active");
+    } else if (
+      scroll >= marttWrapperTop + oneScroll * 6 &&
+      scroll <= marttWrapperTop + oneScroll * 8
+    ) {
+      $(imgWrapper).scrollTop(imgItem * 7);
+      $(".crushers__nav-wrapper li:nth-child(8)").addClass("active");
+    } else if (
+      scroll >= marttWrapperTop + oneScroll * 7 &&
+      scroll <= marttWrapperTop + oneScroll * 9
+    ) {
+      $(imgWrapper).scrollTop(imgItem * 8);
+      $(".crushers__nav-wrapper li:nth-child(9)").addClass("active");
+    } else if (scroll >= marttWrapperTop + oneScroll * 8) {
+      $(imgWrapper).scrollTop(imgItem * 9);
+      $(".crushers__nav-wrapper li:nth-child(10)").addClass("active");
+    }
+  });
+}
+
+function crushersLinks(val) {
+  //$(document).scrollTop(marttWrapperTop + imgItem*val);
+  console.log(oneScroll);
+  console.log(imgItem);
+  $("html,body").animate(
+    { scrollTop: marttWrapperTop + oneScroll * val + 1 },
+    "fast"
+  );
+}
+
+if ($(window).width() < 992) {
+  $(imgWrapper).scroll(function () {
+    colorcrushersSwitcher();
+  });
+}
+
+
+
+// mobile switchers//
+
+var crushersSwitcher1 = $("#crushers__switcher-1");
+var crushersSwitcher2 = $("#crushers__switcher-2");
+var crushersSwitcher3 = $("#crushers__switcher-3");
+var crushersSwitcher4 = $("#crushers__switcher-4");
+var crushersSwitcher5 = $("#crushers__switcher-5");
+var crushersSwitcher6 = $("#crushers__switcher-6");
+var crushersSwitcher7 = $("#crushers__switcher-7");
+var crushersSwitcher8 = $("#crushers__switcher-8");
+var crushersSwitcher9 = $("#crushers__switcher-9");
+var crushersSwitcher10 = $("#crushers__switcher-10");
+
+function colorcrushersSwitcher() {
+  let imgWrapperScrollLeft = imgWrapper.scrollLeft;
+  let imgWrapperScrollWidth = imgWrapper.scrollWidth;
+  let crusherTitle = $(".crushers__switchers-wrapper span");
+
+  $(".crushers__switcher").removeClass("active");
+
+  if (imgWrapper.scrollLeft() < imgWrapper.width() - 1) {
+    crushersSwitcher1.addClass("active");
+    crusherTitle.text($(".crushers__nav-wrapper li:nth-child(1)").text());
+  } else if (
+    imgWrapper.scrollLeft() >= imgWrapper.width() - 1 &&
+    imgWrapper.scrollLeft() < (imgWrapper.width() - 1) * 2
+  ) {
+    crushersSwitcher2.addClass("active");
+    crusherTitle.text($(".crushers__nav-wrapper li:nth-child(2)").text());
+  } else if (
+    imgWrapper.scrollLeft() >= (imgWrapper.width() - 1) * 2 &&
+    imgWrapper.scrollLeft() < (imgWrapper.width() - 1) * 3
+  ) {
+    crushersSwitcher3.addClass("active");
+    crusherTitle.text($(".crushers__nav-wrapper li:nth-child(3)").text());
+  } else if (
+    imgWrapper.scrollLeft() >= (imgWrapper.width() - 1) * 3 &&
+    imgWrapper.scrollLeft() < (imgWrapper.width() - 1) * 4
+  ) {
+    crushersSwitcher4.addClass("active");
+    crusherTitle.text($(".crushers__nav-wrapper li:nth-child(4)").text());
+  } else if (
+    imgWrapper.scrollLeft() >= (imgWrapper.width() - 1) * 4 &&
+    imgWrapper.scrollLeft() < (imgWrapper.width() - 1) * 5
+  ) {
+    crushersSwitcher5.addClass("active");
+    crusherTitle.text($(".crushers__nav-wrapper li:nth-child(5)").text());
+  } else if (
+    imgWrapper.scrollLeft() >= (imgWrapper.width() - 1) * 5 &&
+    imgWrapper.scrollLeft() < (imgWrapper.width() - 1) * 6
+  ) {
+    crushersSwitcher6.addClass("active");
+    crusherTitle.text($(".crushers__nav-wrapper li:nth-child(6)").text());
+  } else if (
+    imgWrapper.scrollLeft() >= (imgWrapper.width() - 1) * 6 &&
+    imgWrapper.scrollLeft() < (imgWrapper.width() - 1) * 7
+  ) {
+    crushersSwitcher7.addClass("active");
+    crusherTitle.text($(".crushers__nav-wrapper li:nth-child(7)").text());
+  } else if (
+    imgWrapper.scrollLeft() >= (imgWrapper.width() - 1) * 7 &&
+    imgWrapper.scrollLeft() < (imgWrapper.width() - 1) * 8
+  ) {
+    crushersSwitcher8.addClass("active");
+    crusherTitle.text($(".crushers__nav-wrapper li:nth-child(8)").text());
+  } else if (
+    imgWrapper.scrollLeft() >= (imgWrapper.width() - 1) * 8 &&
+    imgWrapper.scrollLeft() < (imgWrapper.width() - 1) * 9
+  ) {
+    crushersSwitcher9.addClass("active");
+    crusherTitle.text($(".crushers__nav-wrapper li:nth-child(9)").text());
+  } else if (
+    imgWrapper.scrollLeft() >= (imgWrapper.width() - 1) * 9 &&
+    imgWrapper.scrollLeft() < (imgWrapper.width() - 1) * 10
+  ) {
+    crushersSwitcher10.addClass("active");
+    crusherTitle.text($(".crushers__nav-wrapper li:nth-child(10)").text());
+  }
+}
+</script>
+<!-- crusher js end -->
+
+
+<!-- gallery js -->
+<script>
+  var galleryBtn1 = $('#about-gallery__slide-1');
+var galleryBtn2 = $('#about-gallery__slide-2');
+
+
+
+const aboutGallerySlider = document.querySelector('.about-gallery__content-wrapper');
+const aboutGallerySwitcher1 = document.querySelector('#about-gallery__switcher-1');
+const aboutGallerySwitcher2 = document.querySelector('#about-gallery__switcher-2');
+
+galleryBtn1.click(function(event) {
+	clearInterval(toggleLoop);
+	//$('.about-gallery__img-wrapper').css('justify-content', 'flex-start');
+	$('.about-gallery__img-wrapper').animate({scrollTop: 0}, 300);
+	$(galleryBtn1).addClass('active');
+	$(galleryBtn2).removeClass('active');
+	setTimeout(() => {
+		$('.nasa-bottom-text').show();
+	}, 500);
+});
+
+galleryBtn2.click(function(event) {
+	clearInterval(toggleLoop);
+	//$('.about-gallery__img-wrapper').css('justify-content', 'flex-end');
+	$('.about-gallery__img-wrapper').animate({scrollTop: $('.about-gallery__img-wrapper').height()}, 300);
+	$(galleryBtn1).removeClass('active');
+	$(galleryBtn2).addClass('active');
+	$('.nasa-bottom-text').hide();
+});
+
+
+if ($(window).width() > 600) {
+	var toggleLoop;
+	$(window).scroll(function() {
+		if(!isOnScreen($('.about-gallery__content-wrapper'))){
+			$('.about-gallery__img-wrapper').animate({scrollTop: 0}, 0);
+		}
+
+
+		if (isOnScreen($('.about-gallery__content-wrapper'))) {
+			if(!toggleLoop) {
+				$('#about-gallery__slide-1').addClass('active')
+				$('.about-gallery__img-wrapper').animate({scrollTop: 0}, 0);
+				toggleLoop = setInterval(toggleActive,7000);
+				$('.nasa-bottom-text').show();
+			}
+		} else {
+			clearInterval(toggleLoop);
+			toggleLoop = null;
+			$('.about-gallery__slide').removeClass('active')
+			//$('.about-gallery__img-wrapper').animate({scrollTop: $('.about-gallery__img-wrapper').height()}, 0);
+			$('.nasa-bottom-text').hide();
+		}
+	});
+}
+
+//$('.about-gallery__img-wrapper video').attr('src', 'assets/movies/about2.mp4');
+
+function toggleActive (){
+	$(galleryBtn1).toggleClass('active');
+	$(galleryBtn2).toggleClass('active');
+	if(galleryBtn1.hasClass('active')){
+		$('.about-gallery__img-wrapper').animate({scrollTop: 0}, 300);
+		setTimeout(() => {
+			$('.nasa-bottom-text').show();
+		}, 500);
+	}else{
+		$('.about-gallery__img-wrapper').animate({scrollTop: $('.about-gallery__img-wrapper').height()}, 300);
+		$('.nasa-bottom-text').hide();
+	}
+
+}
+
+function isOnScreen(elem) {
+	// if the element doesn't exist, abort
+	if( elem.length == 0 ) {
+		return;
+	}
+	var $window = jQuery(window)
+	var viewport_top = $window.scrollTop()
+	var viewport_height = $window.height()
+	var viewport_bottom = viewport_top + viewport_height
+	var $elem = jQuery(elem)
+	var top = $elem.offset().top
+	var height = $elem.height()
+	var bottom = top + height
+
+	return (top >= viewport_top && top < viewport_bottom) ||
+		(bottom > viewport_top && bottom <= viewport_bottom) ||
+		(height > viewport_height && top <= viewport_top && bottom >= viewport_bottom)
+}
+
+
+
+// mobile switchers//
+
+aboutGallerySlider.addEventListener("scroll", colorSwitcher);
+
+function colorSwitcher(){
+	let aboutGalleryScrollLeft = aboutGallerySlider.scrollLeft;
+	let aboutGalleryScrollWidth = aboutGallerySlider.scrollWidth;
+
+	aboutGallerySwitcher1.classList.remove('active');
+	aboutGallerySwitcher2.classList.remove('active');
+
+	if(aboutGalleryScrollLeft === 0){
+		$('.about-gallery__img-wrapper').animate({scrollLeft: 0}, 100);
+		aboutGallerySwitcher1.classList.add('active');
+	}else if(aboutGalleryScrollLeft > aboutGalleryScrollWidth/2 - 1){
+		$('.about-gallery__img-wrapper').animate({scrollLeft: $('.about-gallery__img-wrapper').width()}, 100);
+		aboutGallerySwitcher2.classList.add('active');
+	}
+}
+
+
+
+
+// info box //
+
+if ($(window).width() < 600){
+	$('#about-gallery__slide-1 img').click(function() {
+		aboutPopupOpen();
+	});
+
+	$('html').click(function(e) {                    
+		if(!$(e.target).hasClass('about-gallery__info-icon') )
+		{
+			aboutPopupClose();         
+		}
+	});  
+
+
+
+	$('.power__info-icon').click(function() {
+		powerPopupOpen();
+	});
+
+	$('html').click(function(e) {                    
+		if(!$(e.target).hasClass('power__info-icon') )
+		{
+			powerPopupClose();         
+		}
+	});
+
+}else{
+	$('#about-gallery__slide-1 img').mouseover(function() {
+		aboutPopupOpen();
+	});
+
+	$( "#about-gallery__slide-1 img" ).mouseleave(function() {
+		setTimeout(function(){ aboutPopupClose() }, 500);
+	});
+
+	$(".about-gallery__slide-popup").hover(function(){
+	  aboutPopupOpen();
+	})
+
+	$(".about-gallery__slide-popup").mouseleave(function(){
+	  setTimeout(function(){ aboutPopupClose() }, 500);
+	})
+
+	$('.power__info-icon').mouseover(function() {
+		powerPopupOpen();
+	});
+	$(".power__popup").hover(function(){
+	  powerPopupOpen();
+	})
+
+
+	$('.power__info-icon').mouseleave(function() {
+		setTimeout(function(){ powerPopupClose() }, 500);
+	});
+
+	$(".power__popup").mouseleave(function(){
+	  setTimeout(function(){ powerPopupClose() }, 500);
+	})
+
+}
+
+
+function aboutPopupOpen(){
+	if($('.about-gallery__slide-popup').css('display') == 'none'){
+		$('.about-gallery__slide-popup').css('display', 'block');
+		$('.nasa-section-right').css("z-index","-1")
+	}
+}
+
+function aboutPopupClose(){
+	if($('.about-gallery__slide-popup').css('display') == 'block'){
+		$('.about-gallery__slide-popup').css('display', 'none')
+		$('.nasa-section-right').css("z-index","1")
+	}
+}
+
+function powerPopupOpen(){
+	if($('.power__popup').css('display') == 'none'){
+		$('.power__popup').css('display', 'block')
+	}
+}
+
+function powerPopupClose(){
+	if($('.power__popup').css('display') == 'block'){
+		$('.power__popup').css('display', 'none')
+	}
+}
+
+</script>
+<!-- gallery js end -->
+
+<!-- faqs -->
+<script>
+  var item = $('.faqsSec__item-wrapper');
+
+item.click(function() {
+$(this).siblings().removeClass('active');
+$(this).toggleClass('active');
+});
+</script>
+
+<!-- faqs end -->
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+<script src="node_modules/preline/dist/hs-ui.bundle.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "noze",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.6",
+    "vite": "^3.0.2"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "preline": "^1.1.2"
+  }
+}
